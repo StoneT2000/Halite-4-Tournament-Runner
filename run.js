@@ -39,12 +39,16 @@ let halite4Dimension = Dimension.create(halite4, {
   activateStation: false // turns off the API
 })
 
-// The participating competitors
+/**
+ * The participating competitors, add and remove from this list and provide a 
+ * path to the file for the agent and a identifying name 
+ * e.g { file: "path/to/bot.py", name: "my_name" }
+ */ 
 let botlist = [
-  {file:"./bots/still.py", name:"stillbot-1"}, 
-  {file:"./bots/still.py", name:"stillbot-2"}, 
-  {file:"./bots/swarm.py", name:"swarm"}, 
-  {file:"./bots/bot.py", name:"somebot"}
+  { file: "./bots/still.py", name: "stillbot-1" },
+  { file: "./bots/still.py", name: "stillbot-2" },
+  { file: "./bots/swarm.py", name: "swarm" }, 
+  { file: "./bots/bot.py", name: "somebot" }
 ]
 
 // Create our tournament

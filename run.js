@@ -41,10 +41,10 @@ let halite4Dimension = Dimension.create(halite4, {
 
 // The participating competitors
 let botlist = [
-  {file:"./still.py", name:"still-1"}, 
-  {file:"./still.py", name:"still-2"}, 
-  {file:"./bot1.py", name:"swarm"}, 
-  {file:"./still.py", name:"still-3"}
+  {file:"./bots/still.py", name:"stillbot-1"}, 
+  {file:"./bots/still.py", name:"stillbot-2"}, 
+  {file:"./bots/swarm.py", name:"swarm"}, 
+  {file:"./bots/bot.py", name:"somebot"}
 ]
 
 // Create our tournament

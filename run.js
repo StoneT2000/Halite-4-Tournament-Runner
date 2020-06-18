@@ -51,7 +51,7 @@ let botlist = [
 let tourney = halite4Dimension.createTournament(botlist, {
   type: Tournament.TOURNAMENT_TYPE.LADDER,
   name: 'Your Halite 4 Trueskill Ladder',
-  rankSystem: Tournament.RANK_SYSTEM.TRUESKILL,
+  rankSystem: Tournament.RANK_SYSTEM.TRUESKILL, // change to Tournament.RANK_SYSTEM.ELO for ELO ranking
   loggingLevel: Logger.LEVEL.WARN,
   consoleDisplay: true,
   defaultMatchConfigs: {

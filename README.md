@@ -18,3 +18,5 @@ to see a live display of a leaderboard of 3 different bots. The sample bots used
 the file `run.sh` has the command that is used to run the matches in the tournament, and to add more bots, add them to the list in `run.js` at line 47
 
 To use ELO ranking instead of trueskill (the default), change line 58 in `run.js` to `Tournament.RANK_SYSTEM.ELO`
+
+Unfortunately, Windows doesn't work, you will need WSL

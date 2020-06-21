@@ -4,7 +4,7 @@ This code allows you to run a local tournament ranking bots you provide by the T
 
 Ensure you have [NodeJS](https://nodejs.org/) version 12.x or above installed
 
-To run the tournament, fork this repo or clone it to your computer, and first install the following package
+To run the tournament, fork this repo or clone it to your computer, and first install the [Dimensions](https://github.com/stonet2000/dimensions) package
 ```
 npm install dimensions-ai
 ```

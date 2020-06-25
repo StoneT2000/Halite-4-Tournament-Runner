@@ -10,7 +10,7 @@ npm install dimensions-ai
 ```
 then run
 ```
-node.js
+node run.js
 ```
 
 ![halite-tourney](assets/halite-tourney.gif)

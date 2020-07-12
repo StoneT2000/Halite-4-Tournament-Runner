@@ -21,6 +21,8 @@ To add more bots, add them to the list in `run.js` at line 47. Note that you hav
 
 To use ELO ranking instead of trueskill (the default), change line 58 in `run.js` to `Tournament.RANK_SYSTEM.ELO`
 
+This will also automatically generate log files that record all output to standard error only. To turn this off, change line 63 in `run.js` to `false`.
+
 ### Notes
 
 The file `run.sh` has the script that is used to run the matches in the tournament

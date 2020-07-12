@@ -59,7 +59,8 @@ let tourney = halite4Dimension.createTournament(botlist, {
   loggingLevel: Logger.LEVEL.WARN,
   consoleDisplay: true,
   defaultMatchConfigs: {
-    loggingLevel: Logger.LEVEL.NONE
+    loggingLevel: Logger.LEVEL.NONE,
+    storeErrorLogs: true // change to false to stop generating error logs from matches
   },
   resultHandler: (res) => {
     return {ranks: res.ranks};

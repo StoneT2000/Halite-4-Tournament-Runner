@@ -36,7 +36,8 @@ let halite4 = Dimension.Design.createCustom('halite4', {
 let halite4Dimension = Dimension.create(halite4, {
   name: 'Halite 4 Dimension',
   observe: false,
-  activateStation: false // turns off the API
+  activateStation: false, // turns off the API
+  id: 'h4'
 })
 
 /**
@@ -54,6 +55,7 @@ let botlist = [
 // Create our tournament
 let tourney = halite4Dimension.createTournament(botlist, {
   type: Tournament.TOURNAMENT_TYPE.LADDER,
+  id: 'h4ladder',
   name: 'Your Halite 4 Trueskill Ladder',
   rankSystem: Tournament.RANK_SYSTEM.TRUESKILL, // change to Tournament.RANK_SYSTEM.ELO for ELO ranking
   loggingLevel: Logger.LEVEL.WARN,
@@ -69,7 +71,7 @@ let tourney = halite4Dimension.createTournament(botlist, {
   tournamentConfigs: {
     maxConcurrentMatches: 4,
     storePastResults: false,
-    
+
     // maxTotalMatches: 100,
 
     // end after 1 hour = 1 * 60 mins * 60 s * 1000 ms

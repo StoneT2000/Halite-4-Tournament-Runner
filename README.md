@@ -19,9 +19,21 @@ to see a live display of a leaderboard of 4 bots. The sample bots used here for 
 
 To add more bots, add them to the list in `run.js` at line 47. Note that you have to pass in paths to a file (so you can't use the Kaggle given random bot, you will have to copy it over yourself)
 
+## Configuration
+
 To use ELO ranking instead of trueskill (the default), change line 58 in `run.js` to `Tournament.RANK_SYSTEM.ELO`
 
 This will also automatically generate log files that record all output to standard error only. To turn this off, change line 63 in `run.js` to `false`.
+
+You can also configure how the tournament runs by editing the configs in line 69 in `tournamentConfigs`
+
+`maxConcurrentMatches` is the number of matches the tournament will simutaneously run. Try not to set this way above the number of cores you have or you may run into timeout issues.
+
+`maxTotalMatches` is the total number of matches the tournament will allow itself to run before shutting down.
+
+`endDate` is the date in which to end the tournament. You can give the tournament a set lifespan. This takes in a javascript `Date` object, see the comment for an example
+
+By default, some of these options are commented out, just uncomment them and change them as you like!
 
 ### Notes
 

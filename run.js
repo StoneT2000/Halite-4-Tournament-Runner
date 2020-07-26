@@ -68,7 +68,12 @@ let tourney = halite4Dimension.createTournament(botlist, {
   agentsPerMatch: [2, 4],
   tournamentConfigs: {
     maxConcurrentMatches: 4,
-    storePastResults: false
+    storePastResults: false,
+    
+    // maxTotalMatches: 100,
+
+    // end after 1 hour = 1 * 60 mins * 60 s * 1000 ms
+    // endDate: new Date((new Date().valueOf() + 1 * 60 * 60 * 1000))
   }
 });
 // run the tournament
